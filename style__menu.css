@@ -1,0 +1,171 @@
+/* Fonts */
+@font-face {
+  font-family: 'bitstream';
+  src: url("fonts/vera.ttf") format("truetype");
+  src: url("fonts/verait.ttf");
+  src: url("fonts/verabd.ttf");
+  src: url("fonts/verabi.ttf");
+}
+
+@font-face {
+  font-family: 'Sharpie Missy';
+  src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
+}
+
+/* Colors */
+/*Head and foot */
+header {
+  padding: 1em;
+  background: #579c87;
+  color: #fdcb46;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  margin: 25px 17px 25px 17px;
+}
+
+footer a:hover {
+  -webkit-animation: shake 150ms ease-out 0.2s 5;
+          animation: shake 150ms ease-out 0.2s 5;
+}
+
+/* Keyframes */
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+/* Main */
+main {
+  width: 75%;
+  background: #fcdfdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-bottom: 70px;
+  font-family: sharpie missy;
+}
+
+main tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 45px 0px 45px;
+  line-height: 2em;
+}
+
+main tr td:nth-of-type(2) {
+  font-weight: 700;
+}
+
+main .note {
+  width: 100px;
+  height: 100px;
+}
+
+main p, main h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main h2 img {
+  margin: auto;
+  width: 29rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0px 25px 0px;
+}
+
+.foot .note-small {
+  width: 60px;
+  height: 60px;
+}
+
+.foot p {
+  margin: 0px 10px 0px 10px;
+  font-weight: 1000;
+  font-size: 1.6em;
+}
+/*# sourceMappingURL=style__menu.css.map */
