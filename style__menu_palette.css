@@ -1,0 +1,197 @@
+/* Fonts */
+@font-face {
+  font-family: 'bitstream';
+  src: url("fonts/vera.ttf") format("truetype");
+  src: url("fonts/verait.ttf");
+  src: url("fonts/verabd.ttf");
+  src: url("fonts/verabi.ttf");
+}
+
+@font-face {
+  font-family: 'bitstream_vera_serifroman';
+  src: url("VeraSerif-webfont.eot");
+  src: url("VeraSerif-webfont.eot?#iefix") format("embedded-opentype"), url("VeraSerif-webfont.woff2") format("woff2"), url("VeraSerif-webfont.woff") format("woff"), url("VeraSerif-webfont.ttf") format("truetype"), url("VeraSerif-webfont.svg#bitstream_vera_serifroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mala\'s handwriting';
+  src: url("fonts/mala's handwriting.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Dina\'s handwriting';
+  src: url("fonts/dina_'s handwriting.ttf");
+}
+
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url("fonts/kaushanscript-regular.ttf") format("truetype");
+}
+
+/* Colors */
+/*Head and foot */
+header {
+  padding: 1em;
+  background: #579c87;
+  color: #fdcb46;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  margin: 25px 17px 25px 17px;
+}
+
+footer a:hover {
+  -webkit-animation: shake 150ms ease-out 0.2s 5;
+          animation: shake 150ms ease-out 0.2s 5;
+}
+
+/* Keyframes */
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+/* Main */
+main {
+  width: 75%;
+  background: #fdfffd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-bottom: 70px;
+  height: 1500px;
+}
+
+main tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 45px 0px 45px;
+  line-height: 3em;
+}
+
+main tr td:nth-of-type(2) {
+  font-weight: 700;
+}
+
+main h1 {
+  font-family: Kaushan Script;
+  font-size: 5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: -webkit-gradient(linear, left top, right top, from(#41963c), to(#beff7f));
+  background: linear-gradient(to right, #41963c, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px 15px 50px 15px;
+  font-family: 'Dina\'s handwriting';
+}
+
+main img {
+  height: 3rem;
+  width: 26rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+table {
+  font-family: 'Mala\'s handwriting';
+  margin: 0 30px 0 30px;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0px 25px 0px;
+}
+
+.foot .note-small {
+  width: 60px;
+  height: 60px;
+}
+
+.foot p {
+  margin: 0px 10px 0px 10px;
+  font-weight: 1000;
+  font-size: 1.6em;
+}
+/*# sourceMappingURL=style__menu_palette.css.map */

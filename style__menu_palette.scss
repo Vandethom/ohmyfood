@@ -1,0 +1,150 @@
+                            /* Fonts */
+
+@font-face{
+    font-family: 'bitstream';
+    src: url('fonts/vera.ttf') format('truetype');
+    src: url('fonts/verait.ttf');
+    src: url('fonts/verabd.ttf');
+    src: url('fonts/verabi.ttf');
+}
+@font-face {
+    font-family: 'bitstream_vera_serifroman';
+    src: url('VeraSerif-webfont.eot');
+    src: url('VeraSerif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('VeraSerif-webfont.woff2') format('woff2'),
+         url('VeraSerif-webfont.woff') format('woff'),
+         url('VeraSerif-webfont.ttf') format('truetype'),
+         url('VeraSerif-webfont.svg#bitstream_vera_serifroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Mala\'s handwriting';
+    src: url('fonts/mala\'s\ handwriting.otf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Dina\'s handwriting';
+    src: url('fonts/dina_\'s\ handwriting.ttf')
+}
+
+@font-face{
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushanscript-regular.ttf') format('truetype');
+}
+
+                            /* Colors */
+
+$clr--header: #579c87;
+$clr--txt-header: #fdcb46;
+$clr--bg-palette: #fdfffd;
+
+                            /*Head and foot */
+
+header{
+    padding: 1em;
+    background: $clr--header;
+    color: $clr--txt-header ;
+    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer{
+    background: $clr--header;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    a{
+        text-decoration: none;
+        color: $clr--txt-header;
+        margin: 25px 17px 25px 17px;
+        &:hover{
+            animation: shake 150ms ease-out 0.2s 5;
+        }
+    }
+}
+
+                            /* Keyframes */
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+                                }
+    50%{
+        transform: translateX(3px);
+                                }
+    100%{
+        transform: translateX(-3px);
+    }
+}
+
+                            /* Main */
+                        
+main{
+    width: 75%;
+    background: $clr--bg-palette;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 70px;
+    height: 1500px;
+    tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 45px 0px 45px;
+    line-height: 3em;
+        td:nth-of-type(2){
+            font-weight: 700;
+        }
+    }
+    h1{
+        font-family: Kaushan Script;
+        font-size: 5em;
+        align-self: center;
+        background: linear-gradient(to right, #41963c, #beff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 15px 50px 15px;
+        font-family: 'Dina\'s handwriting';
+    }
+    
+    img{
+        height: 3rem;
+        width: 26rem;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+table{
+    font-family: 'Mala\'s handwriting';
+    margin: 0 30px 0 30px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+    .note-small{
+        width: 60px;
+        height: 60px;
+    }
+    p{
+        margin: 0px 10px 0px 10px;
+        font-weight: 1000;
+        font-size: 1.6em;
+    }
+}
