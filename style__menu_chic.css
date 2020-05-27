@@ -8,8 +8,16 @@
 }
 
 @font-face {
-  font-family: 'Sharpie Missy';
-  src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
+  font-family: 'bitstream_vera_serifroman';
+  src: url("VeraSerif-webfont.eot");
+  src: url("VeraSerif-webfont.eot?#iefix") format("embedded-opentype"), url("VeraSerif-webfont.woff2") format("woff2"), url("VeraSerif-webfont.woff") format("woff"), url("VeraSerif-webfont.ttf") format("truetype"), url("VeraSerif-webfont.svg#bitstream_vera_serifroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Croissant One';
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
 }
 
 /* Colors */
@@ -82,7 +90,7 @@ footer a:hover {
 /* Main */
 main {
   width: 75%;
-  background: #fcdfdb;
+  background: #fff5fe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +100,7 @@ main {
           flex-direction: column;
   margin: auto;
   margin-bottom: 70px;
-  font-family: sharpie missy;
+  height: 1150px;
 }
 
 main tr {
@@ -114,15 +122,15 @@ main tr td:nth-of-type(2) {
   font-weight: 700;
 }
 
-main .note {
-  width: 100px;
-  height: 100px;
-}
-
-main p, main h1 {
+main h1 {
+  font-family: Croissant One;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  background: -webkit-gradient(linear, left top, right top, from(#e38913), to(#8f5bfe));
+  background: linear-gradient(to right, #e38913, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 main h2 {
@@ -135,13 +143,42 @@ main h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 80px 15px 50px 15px;
 }
 
-main h2 img {
+main h2:nth-of-type(1) {
+  color: #c67412;
+}
+
+main h2:nth-of-type(2) {
+  color: #a56799;
+}
+
+main h2:nth-of-type(3) {
+  color: #6e4ccc;
+}
+
+main img {
+  height: 3rem;
+  width: 26rem;
   margin: auto;
-  width: 29rem;
-  height: 2.5rem;
   overflow: hidden;
+}
+
+table {
+  font-size: 1.1em;
+}
+
+table:nth-of-type(1) {
+  color: #c67412;
+}
+
+table:nth-of-type(2) {
+  color: #a56799;
+}
+
+table:nth-of-type(3) {
+  color: #6e4ccc;
 }
 
 .foot {
@@ -168,4 +205,4 @@ main h2 img {
   font-weight: 1000;
   font-size: 1.6em;
 }
-/*# sourceMappingURL=style__menu.css.map */
+/*# sourceMappingURL=style__menu_chic.css.map */
