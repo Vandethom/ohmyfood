@@ -1,40 +1,39 @@
-                            /* Fonts */
+/* Fonts */
 
-@font-face{
-    font-family: 'bitstream';
-    src: url('fonts/vera.ttf') format('truetype');
-    src: url('fonts/verait.ttf');
-    src: url('fonts/verabd.ttf');
-    src: url('fonts/verabi.ttf');
+@font-face {
+  font-family: "bitstream";
+  src: url("fonts/vera.ttf") format("truetype");
+  src: url("fonts/verait.ttf");
+  src: url("fonts/verabd.ttf");
+  src: url("fonts/verabi.ttf");
 }
 
-@font-face{
-    font-family: 'Sharpie Missy';
-    src: url('fonts/missy-sharpie-italic.ttf') format('truetype');
+@font-face {
+  font-family: "Sharpie Missy";
+  src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Hand of Sean';
-    src: url('fonts/hand_of_sean_demo.ttf') format('truetype');
+@font-face {
+  font-family: "Hand of Sean";
+  src: url("fonts/hand_of_sean_demo.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Croissant One';
-    src: url('fonts/CroissantOne-Regular.ttf') format('truetype');
+@font-face {
+  font-family: "Croissant One";
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Dancing Script';
-    src: url('fonts/dancing_script.ttf') format('truetype');
+@font-face {
+  font-family: "Dancing Script";
+  src: url("fonts/dancing_script.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Kaushan Script';
-    src: url('fonts/kaushanscript-regular.ttf') format('truetype');
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("fonts/kaushanscript-regular.ttf") format("truetype");
 }
 
-
-                            /* Colors */
+/* Colors */
 
 $clr--header: #579c87;
 $clr--txt-header: #fdcb46;
@@ -43,173 +42,182 @@ $clr--bg-chic: #fff5fe;
 $clr--bg-délice: #f9f9f9;
 $clr--bg-palette: #fdfffd;
 
-                            /*Head and foot */
+/*Head and foot */
 
-header{
-    padding: 1em;
-    background: $clr--header;
-    color: $clr--txt-header ;
-    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-footer{
-    background: $clr--header;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    a{
-        text-decoration: none;
-        color: $clr--txt-header;
-        margin: 25px 17px 25px 17px;
-        &:hover{
-            animation: shake 150ms ease-out 0.2s 5;
-        }
-    }
+header {
+  padding: 1em;
+  background: $clr--header;
+  color: $clr--txt-header;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-                            /* Main */
-                            
-main{
-    width: 100%;
-    margin-bottom: 150px;
-}
-ul{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    list-style-type: none;
-    text-align: center;
-    margin: 20px 200px 20px 200px;
-    li{
-        padding: 8em 2em 14em 2em;
-        margin: 40px;
-        width: 25%;
-        height: 28vmin;
-        box-shadow: 2px 2px 12px gray;
-        a{
-                text-decoration: none;                
-        }
-        img{
-            width: 50px;
-            height: 50px;
-            transform: scale(1);
-            transition: transform 0.6s;
-            &:hover{
-                transform: scale(1.3);
-            }
-        }
-        h1{
-            font-size: 1.5em;
-            transform: scale(1);
-            transition: transform 0.6s;
-            &:hover{
-                transform: scale(1.3);
-            }
-        }
-        p{
-            font-size: 2.2em;
-            transform: scale(1);
-            transition: transform 0.6s;
-            &:hover{
-                transform: scale(1.3);
-            }
-        }
-    } 
-}
-
-.carte{
-    &__chic{
-        background: $clr--bg-chic;
-        font-family: Croissant one;
-        p, h1{
-            background: linear-gradient(to right,#c77529,#6a56a5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-    &__note{
-        background: $clr--bg-note;
-        font-family: Sharpie Missy, Hand of Sean, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        a{
-            color: black;
-        }
-    }
-    &__délice{
-        background: $clr--bg-délice;
-        font-family: Dancing Script;
-        p, h1{
-            background: linear-gradient(to right, #0431df,#0887fb);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-    &__palette{
-        background: $clr--bg-palette;
-        font-family: Kaushan Script;
-        h1{
-            background: linear-gradient(to right, #3d9339, #bfff7e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p{
-            color: #72bf56;
-        }
-    }
-}
-.incoming{
-    position: relative;
-    display: block;
-    text-align: center;
-    border-radius: 10px;
-    background: $clr--header;
+footer {
+  background: $clr--header;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
     color: $clr--txt-header;
-    font-size: 1.3rem;
-    width: 200px;
-    height: 40px;
-    margin: auto;
-    span{
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: $clr--txt-header;
-        display: inline-block;
-        animation-name: dots;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        &:nth-child(1){
-            animation-delay: 0.2s;
-        }
-        &:nth-child(2){
-            animation-delay: 0.5s;
-        }
-        &:nth-child(3){
-            animation-delay: 0.8s;
-        }
+    margin: 25px 17px 25px 17px;
+    &:hover {
+      animation: shake 150ms ease-out 0.2s 5;
     }
+  }
 }
 
-@keyframes dots{
-    50%{
-        opacity: 0;
-        transform: scale(0.7) translateY(3px)
-    }
+/* Main */
+
+body {
+  margin: 0px;
 }
 
-@keyframes shake{
-    0%{
-        transform: translateX(0);
+main {
+  width: 100%;
+  margin-bottom: 150px;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+  margin: 20px 200px 20px 200px;
+  li {
+    padding: 8em 2em 14em 2em;
+    margin: 40px;
+    width: 25%;
+    height: 28vmin;
+    box-shadow: 2px 2px 12px gray;
+    a {
+      text-decoration: none;
     }
-    50%{
-        transform: translateX(3px);
+    img {
+      width: 50px;
+      height: 50px;
+      transform: scale(1);
+      transition: transform 0.6s;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
-    100%{
-        transform: translateX(-3px);
+    h1 {
+      font-size: 1.5em;
+      transform: scale(1);
+      transition: transform 0.6s;
+      &:hover {
+        transform: scale(1.3);
+      }
     }
+    p {
+      font-size: 2.2em;
+      transform: scale(1);
+      transition: transform 0.6s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+
+.carte {
+  &__chic {
+    background: $clr--bg-chic;
+    font-family: Croissant one;
+    p,
+    h1 {
+      background: linear-gradient(to right, #c77529, #6a56a5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__note {
+    background: $clr--bg-note;
+    font-family: Sharpie Missy, Hand of Sean, "Trebuchet MS",
+      "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    a {
+      color: black;
+    }
+  }
+  &__délice {
+    background: $clr--bg-délice;
+    font-family: Dancing Script;
+    p,
+    h1 {
+      background: linear-gradient(to right, #0431df, #0887fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__palette {
+    background: $clr--bg-palette;
+    font-family: Kaushan Script;
+    h1 {
+      background: linear-gradient(to right, #3d9339, #bfff7e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: #72bf56;
+    }
+  }
+}
+.incoming {
+  position: relative;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  background: $clr--header;
+  color: $clr--txt-header;
+  font-size: 1.3rem;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $clr--txt-header;
+    display: inline-block;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    &:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.8s;
+    }
+  }
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(3px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
 }

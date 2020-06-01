@@ -1,6 +1,6 @@
 /* Fonts */
 @font-face {
-  font-family: 'bitstream';
+  font-family: "bitstream";
   src: url("fonts/vera.ttf") format("truetype");
   src: url("fonts/verait.ttf");
   src: url("fonts/verabd.ttf");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'Sharpie Missy';
+  font-family: "Sharpie Missy";
   src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
 }
 
@@ -18,7 +18,7 @@ header {
   padding: 1em;
   background: #579c87;
   color: #fdcb46;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -32,7 +32,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -80,6 +80,10 @@ footer a:hover {
 }
 
 /* Main */
+body {
+  margin: 0px;
+}
+
 main {
   width: 75%;
   background: #fcdfdb;
@@ -119,7 +123,8 @@ main .note {
   height: 100px;
 }
 
-main p, main h1 {
+main p,
+main h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

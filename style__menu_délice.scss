@@ -1,150 +1,154 @@
-                            /* Fonts */
+/* Fonts */
 
-@font-face{
-    font-family: 'bitstream';
-    src: url('fonts/vera.ttf') format('truetype');
-    src: url('fonts/verait.ttf');
-    src: url('fonts/verabd.ttf');
-    src: url('fonts/verabi.ttf');
+@font-face {
+  font-family: "bitstream";
+  src: url("fonts/vera.ttf") format("truetype");
+  src: url("fonts/verait.ttf");
+  src: url("fonts/verabd.ttf");
+  src: url("fonts/verabi.ttf");
 }
 @font-face {
-    font-family: 'bitstream_vera_serifroman';
-    src: url('VeraSerif-webfont.eot');
-    src: url('VeraSerif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('VeraSerif-webfont.woff2') format('woff2'),
-         url('VeraSerif-webfont.woff') format('woff'),
-         url('VeraSerif-webfont.ttf') format('truetype'),
-         url('VeraSerif-webfont.svg#bitstream_vera_serifroman') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "bitstream_vera_serifroman";
+  src: url("VeraSerif-webfont.eot");
+  src: url("VeraSerif-webfont.eot?#iefix") format("embedded-opentype"),
+    url("VeraSerif-webfont.woff2") format("woff2"),
+    url("VeraSerif-webfont.woff") format("woff"),
+    url("VeraSerif-webfont.ttf") format("truetype"),
+    url("VeraSerif-webfont.svg#bitstream_vera_serifroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: 'Dancing Script';
-    src: url('fonts/dancing_script.ttf') format('truetype');
+@font-face {
+  font-family: "Dancing Script";
+  src: url("fonts/dancing_script.ttf") format("truetype");
 }
 
-@font-face{
-    font-family: 'Dina\'s handwriting';
-    src: url('fonts/dina_\'s\ handwriting.ttf')
+@font-face {
+  font-family: "Dina's handwriting";
+  src: url("fonts/dina_'s\ handwriting.ttf");
 }
 
-
-
-@font-face{
-    font-family: 'Croissant One';
-    src: url('fonts/CroissantOne-Regular.ttf') format('truetype');
+@font-face {
+  font-family: "Croissant One";
+  src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
 }
 
-                            /* Colors */
+/* Colors */
 
 $clr--header: #579c87;
 $clr--txt-header: #fdcb46;
 $clr--bg-délice: #edefef;
 
-                            /*Head and foot */
+/*Head and foot */
 
-header{
-    padding: 1em;
-    background: $clr--header;
-    color: $clr--txt-header ;
-    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 1.2rem;
+header {
+  padding: 1em;
+  background: $clr--header;
+  color: $clr--txt-header;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-footer{
-    background: $clr--header;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    a{
-        text-decoration: none;
-        color: $clr--txt-header;
-        margin: 25px 17px 25px 17px;
-        &:hover{
-            animation: shake 150ms ease-out 0.2s 5;
-        }
+footer {
+  background: $clr--header;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: $clr--txt-header;
+    margin: 25px 17px 25px 17px;
+    &:hover {
+      animation: shake 150ms ease-out 0.2s 5;
     }
+  }
 }
 
-                            /* Keyframes */
+/* Keyframes */
 
-@keyframes shake{
-    0%{
-        transform: translateX(0);
-                                }
-    50%{
-        transform: translateX(3px);
-                                }
-    100%{
-        transform: translateX(-3px);
-    }
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
 }
 
-                            /* Main */
-                        
-main{
-    width: 75%;
-    background: $clr--bg-délice;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 70px;
-    height: 1150px;
-    tr{
+/* Main */
+
+body {
+  margin: 0px;
+}
+
+main {
+  width: 75%;
+  background: $clr--bg-délice;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 70px;
+  height: 1150px;
+  tr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px 45px 0px 45px;
     line-height: 2em;
-        td:nth-of-type(2){
-            font-weight: 700;
-        }
+    td:nth-of-type(2) {
+      font-weight: 700;
     }
-    h1{
-        font-family: Dancing Script;
-        align-self: center;
-        background: linear-gradient(to right, #0022db, #0889fb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    h2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 80px 15px 50px 15px;
-        font-family: 'Dina\'s handwriting';
-    }
-    
-    img{
-        height: 3rem;
-        width: 26rem;
-        margin: auto;
-        overflow: hidden;
-    }
-}
-
-table{
-    font-family: 'Dina\'s handwriting';
-}
-
-.foot{
+  }
+  h1 {
+    font-family: Dancing Script;
+    align-self: center;
+    background: linear-gradient(to right, #0022db, #0889fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin: 25px 0px 25px 0px;
-    .note-small{
-        width: 60px;
-        height: 60px;
-    }
-    p{
-        margin: 0px 10px 0px 10px;
-        font-weight: 1000;
-        font-size: 1.6em;
-    }
+    margin: 80px 15px 50px 15px;
+    font-family: "Dina's handwriting";
+  }
+
+  img {
+    height: 3rem;
+    width: 26rem;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+
+table {
+  font-family: "Dina's handwriting";
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0px 25px 0px;
+  .note-small {
+    width: 60px;
+    height: 60px;
+  }
+  p {
+    margin: 0px 10px 0px 10px;
+    font-weight: 1000;
+    font-size: 1.6em;
+  }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Fonts */
 @font-face {
-  font-family: 'bitstream';
+  font-family: "bitstream";
   src: url("fonts/vera.ttf") format("truetype");
   src: url("fonts/verait.ttf");
   src: url("fonts/verabd.ttf");
@@ -9,27 +9,27 @@
 }
 
 @font-face {
-  font-family: 'Sharpie Missy';
+  font-family: "Sharpie Missy";
   src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Hand of Sean';
+  font-family: "Hand of Sean";
   src: url("fonts/hand_of_sean_demo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Croissant One';
+  font-family: "Croissant One";
   src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
   src: url("fonts/dancing_script.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   src: url("fonts/kaushanscript-regular.ttf") format("truetype");
 }
 
@@ -39,7 +39,7 @@ header {
   padding: 1em;
   background: #579c87;
   color: #fdcb46;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -53,7 +53,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -71,6 +71,10 @@ footer a:hover {
 }
 
 /* Main */
+body {
+  margin: 0px;
+}
+
 main {
   width: 100%;
   margin-bottom: 150px;
@@ -154,7 +158,8 @@ ul li p:hover {
   font-family: Croissant one;
 }
 
-.carte__chic p, .carte__chic h1 {
+.carte__chic p,
+.carte__chic h1 {
   background: -webkit-gradient(linear, left top, right top, from(#c77529), to(#6a56a5));
   background: linear-gradient(to right, #c77529, #6a56a5);
   -webkit-background-clip: text;
@@ -163,7 +168,7 @@ ul li p:hover {
 
 .carte__note {
   background: #fcdfdb;
-  font-family: Sharpie Missy, Hand of Sean, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Sharpie Missy, Hand of Sean, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .carte__note a {
@@ -175,7 +180,8 @@ ul li p:hover {
   font-family: Dancing Script;
 }
 
-.carte__délice p, .carte__délice h1 {
+.carte__délice p,
+.carte__délice h1 {
   background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
   background: linear-gradient(to right, #0431df, #0887fb);
   -webkit-background-clip: text;

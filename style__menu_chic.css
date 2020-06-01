@@ -1,6 +1,6 @@
 /* Fonts */
 @font-face {
-  font-family: 'bitstream';
+  font-family: "bitstream";
   src: url("fonts/vera.ttf") format("truetype");
   src: url("fonts/verait.ttf");
   src: url("fonts/verabd.ttf");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'bitstream_vera_serifroman';
+  font-family: "bitstream_vera_serifroman";
   src: url("VeraSerif-webfont.eot");
   src: url("VeraSerif-webfont.eot?#iefix") format("embedded-opentype"), url("VeraSerif-webfont.woff2") format("woff2"), url("VeraSerif-webfont.woff") format("woff"), url("VeraSerif-webfont.ttf") format("truetype"), url("VeraSerif-webfont.svg#bitstream_vera_serifroman") format("svg");
   font-weight: normal;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: 'Croissant One';
+  font-family: "Croissant One";
   src: url("fonts/CroissantOne-Regular.ttf") format("truetype");
 }
 
@@ -26,7 +26,7 @@ header {
   padding: 1em;
   background: #579c87;
   color: #fdcb46;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -40,7 +40,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
-  font-family: mouser, bitstream, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -88,6 +88,10 @@ footer a:hover {
 }
 
 /* Main */
+body {
+  margin: 0px;
+}
+
 main {
   width: 75%;
   background: #fff5fe;
