@@ -40,6 +40,10 @@ header {
     sans-serif;
   text-align: center;
   font-size: 1.2rem;
+  a{
+    text-decoration: none;
+    color: $clr--txt-header;
+  }
 }
 
 footer {
