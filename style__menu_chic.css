@@ -109,7 +109,7 @@ main {
           flex-direction: column;
   margin: auto;
   margin-bottom: 70px;
-  height: 1150px;
+  height: 1550px;
 }
 
 main tr {
@@ -214,5 +214,17 @@ table:nth-of-type(3) {
   margin: 0px 10px 0px 10px;
   font-weight: 1000;
   font-size: 1.6em;
+}
+
+@media all and (max-width: 1024px) {
+  main {
+    width: 100%;
+    height: 1900px;
+    -webkit-text-size-adjust: 245%;
+       -moz-text-size-adjust: 245%;
+        -ms-text-size-adjust: 245%;
+            text-size-adjust: 245%;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style__menu_chic.css.map */

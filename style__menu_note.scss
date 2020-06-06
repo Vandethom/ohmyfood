@@ -19,6 +19,20 @@ $clr--header: #579c87;
 $clr--txt-header: #fdcb46;
 $clr--bg-note: #fcdfdb;
 
+/* Keyframes */
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
+}
+
 /*Head and foot */
 
 header {
@@ -55,20 +69,6 @@ footer {
   }
 }
 
-/* Keyframes */
-
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(3px);
-  }
-  100% {
-    transform: translateX(-3px);
-  }
-}
-
 /* Main */
 
 body {
@@ -82,6 +82,7 @@ main {
   flex-direction: column;
   margin: auto;
   margin-bottom: 70px;
+  height: 1550px;
   font-family: sharpie missy;
   tr {
     display: flex;
@@ -139,5 +140,14 @@ main {
     margin: 0px 10px 0px 10px;
     font-weight: 1000;
     font-size: 1.6em;
+  }
+}
+
+@media all and (max-width: 1024px){
+  main{
+    width: 100%;
+    height: 2100px;
+    text-size-adjust: 225%;
+    margin: 0px; 
   }
 }

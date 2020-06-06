@@ -148,7 +148,7 @@ ul {
 ul li {
   padding: 8em 2em 14em 2em;
   margin: 40px;
-  width: 25%;
+  width: 35%;
   height: 28vmin;
   -webkit-box-shadow: 2px 2px 12px gray;
           box-shadow: 2px 2px 12px gray;
@@ -304,10 +304,8 @@ ul li p:hover {
   ul li {
     padding: 8em 2em 14em 2em;
     margin: 40px;
-    width: 65%;
-    height: 28vmin;
-    -webkit-box-shadow: 2px 2px 12px gray;
-            box-shadow: 2px 2px 12px gray;
+    width: 85%;
+    height: 24vmin;
   }
 }
 /*# sourceMappingURL=style.css.map */
