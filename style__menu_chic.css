@@ -219,7 +219,7 @@ table:nth-of-type(3) {
 @media all and (max-width: 1024px) {
   main {
     width: 100%;
-    height: 2100px;
+    height: 2400px;
     -webkit-text-size-adjust: 245%;
        -moz-text-size-adjust: 245%;
         -ms-text-size-adjust: 245%;
