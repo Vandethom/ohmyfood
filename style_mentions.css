@@ -1,0 +1,124 @@
+/* Fonts */
+@font-face {
+  font-family: "bitstream";
+  src: url("fonts/vera.ttf") format("truetype");
+  src: url("fonts/verait.ttf");
+  src: url("fonts/verabd.ttf");
+  src: url("fonts/verabi.ttf");
+}
+
+@font-face {
+  font-family: "Sharpie Missy";
+  src: url("fonts/missy-sharpie-italic.ttf") format("truetype");
+}
+
+/* Colors */
+/* Keyframes */
+@-webkit-keyframes dots {
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translateY(3px);
+            transform: scale(0.7) translateY(3px);
+  }
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translateY(3px);
+            transform: scale(0.7) translateY(3px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+/*Head and foot */
+header {
+  padding: 1em;
+  background: #579c87;
+  color: #fdcb46;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+footer {
+  background: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  margin: 25px 17px 25px 17px;
+}
+
+footer a:hover {
+  -webkit-animation: shake 150ms ease-out 0.2s 5;
+          animation: shake 150ms ease-out 0.2s 5;
+}
+
+/* Main */
+body {
+  margin: 0px;
+}
+
+body main p, body main h1, body main h2 {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  ul li {
+    padding: 8em 2em 14em 2em;
+    margin: 40px;
+    width: 65%;
+    height: 28vmin;
+    -webkit-box-shadow: 2px 2px 12px gray;
+            box-shadow: 2px 2px 12px gray;
+  }
+}
+/*# sourceMappingURL=style_mentions.css.map */

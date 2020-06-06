@@ -34,6 +34,52 @@
 }
 
 /* Colors */
+/* Keyframes */
+@-webkit-keyframes dots {
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translateY(3px);
+            transform: scale(0.7) translateY(3px);
+  }
+}
+@keyframes dots {
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translateY(3px);
+            transform: scale(0.7) translateY(3px);
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+}
+
 /*Head and foot */
 header {
   padding: 1em;
@@ -213,6 +259,7 @@ ul li p:hover {
   position: relative;
   display: block;
   text-align: center;
+  line-height: 1.7em;
   border-radius: 10px;
   background: #579c87;
   color: #fdcb46;
@@ -251,52 +298,6 @@ ul li p:hover {
 .incoming span:nth-child(3) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-}
-
-@-webkit-keyframes dots {
-  50% {
-    opacity: 0;
-    -webkit-transform: scale(0.7) translateY(3px);
-            transform: scale(0.7) translateY(3px);
-  }
-}
-
-@keyframes dots {
-  50% {
-    opacity: 0;
-    -webkit-transform: scale(0.7) translateY(3px);
-            transform: scale(0.7) translateY(3px);
-  }
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
-  100% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  50% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
-  100% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
 }
 
 @media all and (max-width: 1024px) {
