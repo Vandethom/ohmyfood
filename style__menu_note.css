@@ -135,23 +135,36 @@ main h1 {
       align-self: center;
 }
 
-main h2 {
+.titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 80px 15px 50px 15px;
 }
 
-main h2 img {
+.titles img {
   margin: auto;
   width: 29rem;
   height: 2.5rem;
   overflow: hidden;
+}
+
+.titles h2 {
+  -webkit-transition: background-size 0.4s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
+  background-size: 0 100%;
+}
+
+.titles h2:hover {
+  background: linear-gradient(to top, black 0%, black 2px, transparent 2px) no-repeat;
+  background-size: 100% 100%;
 }
 
 .foot {

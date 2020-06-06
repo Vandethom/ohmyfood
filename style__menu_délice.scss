@@ -121,20 +121,29 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 80px 15px 50px 15px;
-    font-family: "Dina's handwriting";
-  }
-
   img {
     height: 3rem;
     width: 26rem;
     margin: auto;
     overflow: hidden;
   }
+}
+
+.titles {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 15px 50px 15px;
+  font-family: "Dina's handwriting";
+  h2{
+  transition: background-size 0.4s ease-in-out;
+  background-size: 0 100%;
+  &:hover{
+    background: linear-gradient(to top, blue 0%, blue 2px, transparent 2px) no-repeat;
+    background-size: 100% 100%;
+  }
+}
 }
 
 table {

@@ -142,10 +142,11 @@ main h1 {
   -webkit-text-fill-color: transparent;
 }
 
-main h2 {
+main .titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -153,18 +154,18 @@ main h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 80px 15px 50px 15px;
+  font-family: "Croissant One";
 }
 
-main h2:nth-of-type(1) {
-  color: #c67412;
+main .titles h2 {
+  -webkit-transition: background-size 0.4s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
+  background-size: 0 100%;
 }
 
-main h2:nth-of-type(2) {
-  color: #a56799;
-}
-
-main h2:nth-of-type(3) {
-  color: #6e4ccc;
+main .titles h2:hover {
+  background: linear-gradient(to top, #2ba32b 0%, #2ba32b 2px, transparent 2px) no-repeat;
+  background-size: 100% 100%;
 }
 
 main img {

@@ -122,12 +122,22 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2 {
+
+  .titles {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     margin: 80px 15px 50px 15px;
     font-family: "Dina's handwriting";
+    h2{
+    transition: background-size 0.4s ease-in-out;
+    background-size: 0 100%;
+    &:hover{
+      background: linear-gradient(to top, rgb(91, 218, 91) 0%, rgb(91, 218, 91) 2px, transparent 2px) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
   }
 
   img {

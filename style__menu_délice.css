@@ -152,10 +152,18 @@ main h1 {
   -webkit-text-fill-color: transparent;
 }
 
-main h2 {
+main img {
+  height: 3rem;
+  width: 26rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -166,11 +174,15 @@ main h2 {
   font-family: "Dina's handwriting";
 }
 
-main img {
-  height: 3rem;
-  width: 26rem;
-  margin: auto;
-  overflow: hidden;
+.titles h2 {
+  -webkit-transition: background-size 0.4s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
+  background-size: 0 100%;
+}
+
+.titles h2:hover {
+  background: linear-gradient(to top, blue 0%, blue 2px, transparent 2px) no-repeat;
+  background-size: 100% 100%;
 }
 
 table {
