@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts */
 @font-face {
   font-family: "bitstream";
@@ -168,7 +169,8 @@ main h1 {
   background-size: 100% 100%;
 }
 
-.foot {
+.note_enchantée {
+  padding: 125px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,12 +184,12 @@ main h1 {
   margin: 25px 0px 25px 0px;
 }
 
-.foot .note-small {
+.note_enchantée .note-small {
   width: 60px;
   height: 60px;
 }
 
-.foot p {
+.note_enchantée p {
   margin: 0px 10px 0px 10px;
   font-weight: 1000;
   font-size: 1.6em;
