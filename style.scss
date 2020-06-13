@@ -83,7 +83,6 @@ footer {
   background: $clr--header;
   display: flex;
   justify-content: space-between;
-  font-size: 1.2rem;
   font-family: mouser, bitstream, Impact, Haettenschweiler, "Arial Narrow Bold",
     sans-serif;
   position: fixed;
@@ -234,6 +233,15 @@ ul {
 
 @media all and (max-width: 1024px){
 
+  footer{
+    a{
+    font-size: 1.8em;
+    }
+  }
+  .incoming{
+    font-size: 1.5em;
+  }
+  
   ul{
     li {
       padding: 8em 2em 14em 2em;

@@ -120,5 +120,8 @@ body main p, body main h1, body main h2 {
     -webkit-box-shadow: 2px 2px 12px gray;
             box-shadow: 2px 2px 12px gray;
   }
+  .incoming {
+    font-size: 1.3em;
+  }
 }
 /*# sourceMappingURL=style_mentions.css.map */

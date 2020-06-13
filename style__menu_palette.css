@@ -217,6 +217,9 @@ table {
 }
 
 @media all and (max-width: 1024px) {
+  footer a {
+    font-size: 1.8em;
+  }
   main {
     width: 100%;
     height: 2600px;

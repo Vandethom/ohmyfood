@@ -90,6 +90,12 @@
  
   
   @media all and (max-width: 1024px){
+
+    footer{
+      a{
+      font-size: 1.8em;
+      }
+    }
   
     ul{
       li {
@@ -99,5 +105,5 @@
         height: 28vmin;
         box-shadow: 2px 2px 12px gray;
       }
-    }
+    }z
   }
